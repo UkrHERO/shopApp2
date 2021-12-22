@@ -1,24 +1,31 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
 import './EditForm.module.css';
+import { editProductById } from '../../api/api';
 
-function EditForm({ onSubmit, onClose, product }) {
-  const [formData, setFormData] = useState(null);
+function EditForm({ onClose, product }) {
+  const [formData, setFormData] = useState({ ...product });
 
+  useEffect(() => {
+    setFormData({
+      ...product,
+    });
+  }, [product]);
   const handleSubmit = e => {
     e.preventDefault();
-    onSubmit({ ...formData });
+    editProductById(formData);
+    onClose();
   };
 
   const handleChange = e => {
     const { name, value } = e.target;
     setFormData({
+      ...product,
       [name]: value,
-      ...formData,
     });
   };
 
-  const { name, count, width, height, weight, comments } = product;
+  const { name, count, width, height, weight, comments } = formData;
 
   return (
     <form onSubmit={handleSubmit}>
@@ -90,9 +97,5 @@ function EditForm({ onSubmit, onClose, product }) {
     </form>
   );
 }
-
-EditForm.propTypes = {
-  onSubmit: PropTypes.func,
-};
 
 export default EditForm;

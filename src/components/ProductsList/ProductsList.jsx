@@ -8,6 +8,7 @@ import { getProduct } from '../../redux/products/products-selectors';
 import EditForm from '../EditForm/EditForm';
 import { getProductById } from '../../api/api';
 import ModalEdit from '../ModalEdit/ModalEdit';
+import { getProducts } from '../../redux/products/products-operations';
 
 const INITIAL_STATE = {
   name: '',
@@ -34,6 +35,7 @@ const ProductsList = ({ products, deleteProd }) => {
   const onCloseEdit = () => {
     setShowModalEdit(false);
     setProduct({ ...INITIAL_STATE });
+    dispatch(getProducts());
   };
   const editProd = id => {
     getProductById(id)

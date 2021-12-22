@@ -14,18 +14,8 @@
       ]
     },
     {
-      "name": "New Product",
-      "count": "5",
-      "imageUrl": "/",
-      "width": "100",
-      "height": "100",
-      "weight": "20",
-      "comments": "good",
-      "id": 5
-    },
-    {
       "name": "Ball",
-      "count": "50",
+      "count": "12",
       "imageUrl": "/",
       "width": "10",
       "height": "10",
@@ -35,13 +25,23 @@
     },
     {
       "name": "Watch",
-      "count": "5",
+      "count": "50000",
       "imageUrl": "/",
       "width": "15",
       "height": "20",
       "weight": "1",
       "comments": "blue",
       "id": 7
+    },
+    {
+      "name": "Phone",
+      "count": "2",
+      "imageUrl": "/",
+      "width": "10",
+      "height": "15",
+      "weight": "2",
+      "comments": "black",
+      "id": 8
     }
   ]
 }

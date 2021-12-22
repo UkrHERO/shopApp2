@@ -32,7 +32,7 @@ export async function getProductById(id) {
   return data;
 }
 
-export async function editProductById(id) {
-  const { data } = await axios.patch(`/products/${id}`);
+export async function editProductById(obj) {
+  const { data } = await axios.patch(`/products/${obj.id}`, obj);
   return data;
 }
