@@ -15,7 +15,7 @@
     },
     {
       "name": "Ball",
-      "count": "12",
+      "count": "120",
       "imageUrl": "/",
       "width": "10",
       "height": "10",
@@ -39,9 +39,29 @@
       "imageUrl": "/",
       "width": "10",
       "height": "15",
-      "weight": "2",
+      "weight": "2000",
       "comments": "black",
       "id": 8
+    },
+    {
+      "name": "Apple",
+      "count": "10",
+      "imageUrl": "/",
+      "width": "10",
+      "height": "10",
+      "weight": "5",
+      "comments": "green",
+      "id": 9
+    },
+    {
+      "name": "Orange",
+      "count": "500",
+      "imageUrl": "/",
+      "width": "5",
+      "height": "5",
+      "weight": "1",
+      "comments": "orange",
+      "id": 10
     }
   ]
 }

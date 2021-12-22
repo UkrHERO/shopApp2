@@ -1,4 +1,3 @@
-import { nanoid } from 'nanoid';
 import { createAction } from '@reduxjs/toolkit';
 
 const addProduct = createAction('product/add', data => ({

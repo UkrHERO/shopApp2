@@ -1,11 +1,8 @@
-import { useEffect, useState } from 'react';
-import { useSelector, useDispatch } from 'react-redux';
+import { useState } from 'react';
+import { useDispatch } from 'react-redux';
 import PropTypes from 'prop-types';
 import './ProductsList.module.css';
 import Modal from '../Modal/Modal';
-import { getProduct } from '../../redux/products/products-selectors';
-// import { getProductById } from '../../redux/products/products-operations';
-import EditForm from '../EditForm/EditForm';
 import { getProductById } from '../../api/api';
 import ModalEdit from '../ModalEdit/ModalEdit';
 import { getProducts } from '../../redux/products/products-operations';
@@ -26,9 +23,6 @@ const ProductsList = ({ products, deleteProd }) => {
   const [product, setProduct] = useState({ ...INITIAL_STATE });
   const dispatch = useDispatch();
 
-  const onItmClick = () => {
-    setShowModal(!showModal);
-  };
   const onClose = () => {
     setShowModal(false);
   };

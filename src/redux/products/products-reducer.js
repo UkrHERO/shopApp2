@@ -1,4 +1,3 @@
-import actions from './products-actions';
 import { createReducer, combineReducers } from '@reduxjs/toolkit';
 import {
   getProducts,

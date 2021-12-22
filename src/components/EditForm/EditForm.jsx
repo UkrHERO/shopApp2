@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import PropTypes from 'prop-types';
 import './EditForm.module.css';
 import { editProductById } from '../../api/api';
 

@@ -2,16 +2,6 @@ import axios from 'axios';
 
 axios.defaults.baseURL = 'http://localhost:3000';
 
-// export const getProducts = createAsyncThunk('products/get', async () => {
-//   try {
-//     const { data } = await axios.get('/products');
-
-//     return data;
-//   } catch (error) {
-//     alert(error.message);
-//   }
-// });
-
 export async function getProducts() {
   const { data } = await axios.get(`/products`);
   return data;
