@@ -1,0 +1,27 @@
+{
+  "products": [
+    {
+      "id": 3,
+      "imageUrl": "some url here",
+      "name": "Product name",
+      "count": 4,
+      "width": 200,
+      "height": 200,
+      "weight": "200g",
+      "comments": [
+        "CommentModel",
+        "CommentModel"
+      ]
+    },
+    {
+      "name": "New Product",
+      "count": "5",
+      "imageUrl": "/",
+      "width": "100",
+      "height": "100",
+      "weight": "20",
+      "comments": "good",
+      "id": 5
+    }
+  ]
+}
