@@ -33,6 +33,7 @@ const ProductsList = ({ products, deleteProd }) => {
   };
   const onCloseEdit = () => {
     setShowModalEdit(false);
+    setProduct({ ...INITIAL_STATE });
   };
   const editProd = id => {
     getProductById(id)

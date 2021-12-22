@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import './EditForm.module.css';
 
 function EditForm({ onSubmit, onClose, product }) {
-  const [formData, setFormData] = useState({ ...product });
+  const [formData, setFormData] = useState(null);
 
   const handleSubmit = e => {
     e.preventDefault();
@@ -12,13 +12,13 @@ function EditForm({ onSubmit, onClose, product }) {
 
   const handleChange = e => {
     const { name, value } = e.target;
-    // setFormData({
-    //   [name]: value,
-    //   // ...formData,
-    // });
+    setFormData({
+      [name]: value,
+      ...formData,
+    });
   };
 
-  const { name, count, width, height, weight, comments } = formData;
+  const { name, count, width, height, weight, comments } = product;
 
   return (
     <form onSubmit={handleSubmit}>

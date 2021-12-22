@@ -35,7 +35,7 @@ function App() {
     <Container>
       <h2>Products</h2>
       <button type="button" onClick={onItmClick}>
-        Add
+        Add product
       </button>
       <ProductsList products={products} deleteProd={deleteProd} />
       {showModal && <Modal onClose={onClose} />}

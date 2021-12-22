@@ -22,6 +22,26 @@
       "weight": "20",
       "comments": "good",
       "id": 5
+    },
+    {
+      "name": "Ball",
+      "count": "50",
+      "imageUrl": "/",
+      "width": "10",
+      "height": "10",
+      "weight": "1",
+      "comments": "white",
+      "id": 6
+    },
+    {
+      "name": "Watch",
+      "count": "5",
+      "imageUrl": "/",
+      "width": "15",
+      "height": "20",
+      "weight": "1",
+      "comments": "blue",
+      "id": 7
     }
   ]
 }
