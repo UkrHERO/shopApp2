@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
+import Button from '@mui/material/Button';
 import './AddForm.module.css';
 const INITIAL_STATE = {
   name: '',
@@ -93,10 +94,17 @@ function AddForm({ onSubmit, onClose }) {
         />
       </label>
 
-      <button type="submit">Add product</button>
-      <button type="button" onClick={onClose}>
+      <Button style={{ marginTop: '10px' }} variant="contained" type="submit">
+        Add product
+      </Button>
+      <Button
+        style={{ marginTop: '10px' }}
+        variant="contained"
+        type="button"
+        onClick={onClose}
+      >
         Close
-      </button>
+      </Button>
     </form>
   );
 }

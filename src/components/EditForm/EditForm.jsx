@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './EditForm.module.css';
 import { editProductById } from '../../api/api';
+import Button from '@mui/material/Button';
 
 function EditForm({ onClose, product }) {
   const [formData, setFormData] = useState({ ...product });
@@ -89,10 +90,17 @@ function EditForm({ onClose, product }) {
         />
       </label>
 
-      <button type="submit">Confirm</button>
-      <button type="button" onClick={onClose}>
-        Cancel
-      </button>
+      <Button style={{ marginTop: '10px' }} variant="contained" type="submit">
+        Confirm
+      </Button>
+      <Button
+        style={{ marginTop: '10px' }}
+        variant="contained"
+        type="button"
+        onClick={onClose}
+      >
+        Close
+      </Button>
     </form>
   );
 }
